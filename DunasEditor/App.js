@@ -1,9 +1,9 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View, Image } from "react-native";
+import { StyleSheet, View, Platform } from "react-native";
 import ImageViewer from "./components/ImageViewer";
 import Button from "./components/Button";
 import * as ImagePicker from "expo-image-picker";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import CircleButton from "./components/CircleButton";
 import IconButton from "./components/IconButton";
 import EmojiPicker from "./components/EmojiPicker";
@@ -12,10 +12,7 @@ import EmojiSticker from "./components/EmojiSticker";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import * as MediaLibrary from "expo-media-library";
 import { captureRef } from "react-native-view-shot";
-import { useRef } from "react";
 import domtoimage from "dom-to-image";
-import { Platform } from "react-native";
-import { StatusBar } from 'expo-status-bar';
 
 
 const PlaceholderImage = require("./assets/images/background-image.png");
