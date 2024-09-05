@@ -1,4 +1,4 @@
-import { FaPlay, FaPlus, FaPlusCircle, FaShare } from "react-icons/fa";
+import { FaGoogle, FaPlay, FaPlus, FaPlusCircle, FaShare } from "react-icons/fa";
 import {} from "react-icons/bi"
 import { Image, StyleSheet, Text, View } from "react-native";
 
