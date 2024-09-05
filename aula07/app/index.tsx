@@ -1,4 +1,5 @@
-import { Text, View } from "react-native";
+import { Pressable, Text, View } from "react-native";
+import { Link } from "expo-router";
 
 export default function Index() {
   return (
@@ -9,7 +10,14 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text>Página de testes de rotas </Text>
+
+      <Link href="/home" asChild>
+        <Pressable><Text>home</Text></Pressable>
+      </Link>
+      <Link href="/sobre" asChild>
+        <Pressable><Text>sobre</Text></Pressable>
+      </Link>
     </View>
   );
 }
