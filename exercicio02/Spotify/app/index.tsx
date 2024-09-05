@@ -1,18 +1,16 @@
 import { StyleSheet, Text, View } from "react-native";
-import { Header } from "react-native/Libraries/NewAppScreen";
+
 
 function Home() {
-    return ( 
+    return (
         <View style={style.container}>
             {/* header */}
-            <Header>
-            <View>
-                    <Text>
-                        Tudo
-                    </Text>
+            <View style={style.box}>
+                <View style={style.user}>
+                    L
                 </View>
 
-                <View>
+                <View style={style.card}>
                     <Text>
                         Tudo
                     </Text>
@@ -27,15 +25,41 @@ function Home() {
                         Playlist
                     </Text>
                 </View>
-            </Header>
+            </View>
 
         </View>
-     );
+    );
 }
 
 const style = StyleSheet.create({
-    container:{
+    container: {
         display: "flex",
+        backgroundColor: "black",
+        padding: 26
+    },
+    user:{
+        width: 20,
+        height: 20,
+        borderRadius: 100,
+        backgroundColor: "brown",
+        color: "white",
+        display: "flex",
+        alignItems: "center",
+        justifyContent:"center",
+    },
+    box:{
+        display: "flex",
+        flexDirection: "row",
+        gap: 6,
+        marginTop:10
+    },
+    card:{
+        display: "flex",
+        backgroundColor: "green",
+        color: "#fff",
+        padding: 4,
+        paddingHorizontal: 10,
+        borderRadius: 20
     }
 })
 
