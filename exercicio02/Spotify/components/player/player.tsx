@@ -1,20 +1,27 @@
-import { FaCheck, FaPlay, FaShare } from "react-icons/fa";
-import { StyleSheet, Text, View } from "react-native";
+import { FaPlay, FaPlus, FaPlusCircle, FaShare } from "react-icons/fa";
+import {} from "react-icons/bi"
+import { Image, StyleSheet, Text, View } from "react-native";
 
 function Player() {
+
+
   return (
     <View style={style.container}>
       <View style={style.divImg}>
-        image
+      <Image
+        style={style.album}
+        source={require("../../assets/images/album.jpg")}
+      />
+
         <View>
           <Text style={{ fontWeight: 600 }}>Cotidiano</Text>
           <Text style={{ fontWeight: 200, fontSize: 14 }}>Chico Buarque</Text>
         </View>
       </View>
       <View style={style.divShare}>
-        <FaShare />
-        <FaCheck />
-        <FaPlay />
+        <FaShare style={style.btnShare}/>
+        <FaPlusCircle style={style.btnShare}/>
+        <FaPlay style={style.btnShare}/>
       </View>
     </View>
   );
@@ -25,9 +32,10 @@ const style = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    paddingRight: 20,
-    paddingLeft: 20,
-    padding: 5,
+    padding: 10,
+    width: "90%",
+    backgroundColor:"white",
+    borderRadius: 7
   },
   divShare: {
     display: "flex",
@@ -42,6 +50,15 @@ const style = StyleSheet.create({
     alignItems: "center",
     gap:10 
   },
+  album: {
+    height:40,
+    width: 40,
+    objectFit: "cover",
+    borderRadius: 5
+  },
+  btnShare: {
+    cursor: "pointer"
+  }
 });
 
 export default Player;
