@@ -1,13 +1,17 @@
 import {Image, StyleSheet, View, Text} from "react-native"
 
-function playlist({musica, nome}) {
+type playlistProps = {
+    musica: string,
+    nome: string
+}
 
-    const img = require(musica)
+function Playlist({musica, nome}: playlistProps) {
+
     return ( 
         <View style={style.container}>
             <Image
             style={style.img}
-            source={img}/>
+            source={{ uri: musica }}/>
              <Text style={style.txt}>
                 {nome}
              </Text>
@@ -24,7 +28,9 @@ const style = StyleSheet.create({
         alignItems: "center",
         paddingRight: 10,
         borderRadius: 6,
-        gap: 10
+        gap: 10,
+        overflow:"hidden",
+        width: "48%"
     },
     img:{
         height: 60,
@@ -37,4 +43,4 @@ const style = StyleSheet.create({
     }
 })
 
-export default playlist;
+export default Playlist;

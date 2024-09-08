@@ -39,7 +39,7 @@ const style = StyleSheet.create({
     flexDirection: "row",
     width: "100%",
     justifyContent: "space-around",
-    backgroundColor: "black", 
+    backgroundColor: "rgba(0, 0, 0, 0.5)", 
     padding:10
   },
   btnLinks: {
@@ -50,11 +50,14 @@ const style = StyleSheet.create({
     alignItems: "center",
   },
   box:{
-    backgroundColor: "black",
+    backgroundColor: 'linear-gradient(45deg ,0% rgba(0, 0, 0, 0.2), 100% rgba(0, 0, 0, 1) )',
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    gap: 5
+    position: "absolute",
+    bottom: 0,
+    left:0,
+    right: 0,
   }
 });
 

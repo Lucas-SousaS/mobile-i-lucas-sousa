@@ -2,15 +2,26 @@ import { Stack } from "expo-router";
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import NavBar from "../components/navBar/navbar";
 import Library from "./lib/index";
+import { View } from "react-native";
 
 export default function RootLayout() {
   return (
     <ThemeProvider value={DarkTheme} >
-      {/* Envolve todas as páginas dentro do Stack */}
+      
+      <View style={{
+        display: "flex",
+        flexDirection: "column",
+        height: "100%",
+        overflow: "hidden",
+        width: "100%",
+        backgroundColor: "black"
+      }}>
+
       <Stack screenOptions={{ headerShown: false }} />
 
-      {/* Coloque o NavBar fora do Stack, se quiser que esteja sempre visível */}
+      
       <NavBar />
+      </View>
     </ ThemeProvider >
   );
 }
