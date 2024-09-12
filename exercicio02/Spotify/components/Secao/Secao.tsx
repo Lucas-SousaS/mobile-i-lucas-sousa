@@ -2,10 +2,11 @@ import { Image, StyleSheet, Text, View } from "react-native";
 
 type albumProps = {
     imagem: string,
-    text: string
+    text: string,
+    
 }
 
-function Album({imagem, text}: albumProps) {
+function Secao({imagem, text}: albumProps) {
     return ( 
         <View style={style.container}>
             <Image style={style.imagem} source={{uri:`${imagem}`}} />
@@ -20,7 +21,6 @@ const style = StyleSheet.create({
     container: {
         width: 100,
         height:180,
-        cursor: "pointer",
         display: "flex",
         color: "white",
         gap: 10,
@@ -37,4 +37,4 @@ const style = StyleSheet.create({
     }
 })
 
-export default Album;
+export default secao;

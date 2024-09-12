@@ -23,18 +23,21 @@ const style = StyleSheet.create({
     
     card:{
         display: "flex",
-        backgroundColor: "grey",
+        backgroundColor: "#1f1f1f",
         padding: 4,
         paddingHorizontal: 10,
         borderRadius: 20,
+        cursor: "pointer",
         
     },
     txtCard: {
         fontWeight: 400,
+        cursor: "pointer",
         color:"white"
     },
     greenCard:{
         display: "flex",
+        cursor: "pointer",
         backgroundColor: "green",
         padding: 4,
         paddingHorizontal: 10,

@@ -14,8 +14,8 @@ function Player() {
       />
 
         <View>
-          <Text style={{ fontWeight: 600 }}>Cotidiano</Text>
-          <Text style={{ fontWeight: 200, fontSize: 14 }}>Chico Buarque</Text>
+          <Text style={{ fontWeight: 600 , color:"white" }}>Cotidiano</Text>
+          <Text style={{ fontWeight: 200, fontSize: 14, color:"#D3D3D3" }}>Chico Buarque</Text>
         </View>
       </View>
       <View style={style.divShare}>
@@ -34,8 +34,10 @@ const style = StyleSheet.create({
     justifyContent: "space-between",
     padding: 10,
     width: "90%",
-    backgroundColor:"white",
-    borderRadius: 7
+    backgroundColor:"#336633",
+    borderRadius: 7,
+    cursor: "pointer",
+    color: "white"
   },
   divShare: {
     display: "flex",
@@ -43,21 +45,26 @@ const style = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     gap: 10,
+    color: "white"
   },
   divImg: {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    gap:10 
+    gap:10,
+    color: "white"
   },
   album: {
     height:40,
     width: 40,
     objectFit: "cover",
-    borderRadius: 5
+    borderRadius: 5,
+    color: "white"
   },
   btnShare: {
-    cursor: "pointer"
+    cursor: "pointer",
+
+    color: "white"
   }
 });
 

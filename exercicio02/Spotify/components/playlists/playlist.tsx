@@ -21,7 +21,8 @@ function Playlist({musica, nome}: playlistProps) {
 
 const style = StyleSheet.create({
     container:{
-        backgroundColor: "#212121",
+        backgroundColor: "#1f1f1f",
+        cursor: "pointer",
         color: "white",
         display: "flex",
         flexDirection: "row",
