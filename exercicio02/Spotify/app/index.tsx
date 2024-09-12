@@ -13,7 +13,9 @@ function Home() {
     >
       {/* header */}
       <View style={style.box}>
-        <View style={style.user}>L</View>
+        <View style={style.user}>
+          <Text style={{ color: "white" }}>L</Text>
+        </View>
 
         <CardHeader texto="Tudo" tema="green" />
         <CardHeader texto="Música" tema="dark" />
@@ -55,10 +57,9 @@ function Home() {
         />
       </View>
 
-     <Albuns title="Suas playlists estão com saudade" tema="rock" />
-     <Albuns title="Suas playlists estão com saudade" tema="blues"/>
-     <Albuns title="Suas playlists estão com saudade" tema="pagode"/>
-      
+      <Albuns title="Suas playlists estão com saudade" tema="rock" />
+      <Albuns title="Suas playlists estão com saudade" tema="blues" />
+      <Albuns title="Suas playlists estão com saudade" tema="pagode" />
     </ScrollView>
   );
 }
@@ -127,15 +128,15 @@ const style = StyleSheet.create({
     width: "100%",
     marginVertical: 20,
   },
-  Album:{
-    padding: 10
+  Album: {
+    padding: 10,
   },
-  titleAlbuns:{
+  titleAlbuns: {
     color: "white",
     marginTop: 30,
     fontWeight: 700,
-    fontSize: 20
-  }
+    fontSize: 20,
+  },
 });
 
 export default Home;
