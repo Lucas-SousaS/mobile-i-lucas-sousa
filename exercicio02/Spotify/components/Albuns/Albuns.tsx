@@ -1,5 +1,5 @@
 import { ScrollView, StyleSheet, Text, View } from "react-native";
-import Album from "../album/album";
+import Album from "../album/Album";
 
 type playlistAlbunsPorps = {
     title: string,
@@ -104,7 +104,7 @@ const style = StyleSheet.create({
       titleAlbuns:{
         color: "white",
         marginTop: 30,
-        fontWeight: 700,
+        fontWeight: '700',
         fontSize: 20
       }
 });

@@ -1,15 +1,16 @@
-import CardHeader from "@/components/cardHeader/cardHeader";
+import CardHeader from "@/components/cardHeader/CardHeader";
 import PlaylistLib from "@/components/PlaylistLib/PlaylistLib";
-import {
-  FaArrowsAltH,
-  FaArrowsAltV,
-  FaCamera,
-  FaFirstOrder,
-  FaPlus,
-  FaQrcode,
-  FaSearch,
-} from "react-icons/fa";
+// import {
+//   FaArrowsAltH,
+//   FaArrowsAltV,
+//   FaCamera,
+//   FaFirstOrder,
+//   FaPlus,
+//   FaQrcode,
+//   FaSearch,
+// } from "react-icons/fa";
 import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Icon } from "react-native-elements/dist/icons/Icon";
 
 function Library() {
   return (
@@ -28,8 +29,10 @@ function Library() {
         </View>
 
         <View style={style.boxIconCamera}>
-          <FaSearch style={style.iconCamera} />
-          <FaPlus style={style.iconCamera} />
+          {/* <FaSearch style={style.iconCamera} /> */}
+          <Icon name="search" type="font-awesome" color="#fff" size={20} />
+          <Icon name="plus" type="font-awesome" color="#fff" size={20} />
+          {/* <FaPlus style={style.iconCamera} /> */}
         </View>
       </View>
 
@@ -42,11 +45,17 @@ function Library() {
 
       <View style={style.boxRecentes}>
         <Text style={style.titleRecentes}>
-          <FaArrowsAltV />
-          Recentes
+          {/* <FaArrowsAltV /> */}
+          <Icon name="home" type="font-awesome" color="#fff" size={20} />
+          
+          <Text>
+            Recentes
+          </Text>
+
         </Text>
 
-        <FaQrcode style={style.iconQr} />
+        {/* <FaQrcode style={style.iconQr} /> */}
+        <Icon name="qrcode" type="font-awesome" color="#fff" size={20} />
       </View>
 
       <View style={style.boxPlaylistLib}>
@@ -102,9 +111,10 @@ const style = StyleSheet.create({
 
   titleRecentes: {
     color: "white",
-    fontWeight: 600,
+    fontWeight: '600',
     display: "flex",
     flexDirection: "row",
+    gap: 10,
     alignItems: "center",
   },
   boxRecentes: {
@@ -113,6 +123,7 @@ const style = StyleSheet.create({
     width: "100%",
     justifyContent: "space-between",
     marginTop: 20,
+    gap: 20
   },
   boxNav: {
     display: "flex",
@@ -134,7 +145,7 @@ const style = StyleSheet.create({
   },
   titleBuscar: {
     color: "white",
-    fontWeight: 600,
+    fontWeight: '600',
     fontSize: 20,
   },
   containerUser: {

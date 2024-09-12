@@ -1,4 +1,4 @@
-import { FaCamera, FaSearch, FaSlash } from "react-icons/fa";
+// import { FaCamera, FaSearch, FaSlash } from "react-icons/fa";
 import {
   Image,
   ScrollView,
@@ -25,12 +25,12 @@ function Busca() {
         </View>
 
         <View style={style.boxIconCamera}>
-          <FaCamera style={style.iconCamera} />
+          {/* <FaCamera style={style.iconCamera} /> */}
         </View>
       </View>
 
       <View style={style.boxInputSearch}>
-        <FaSearch />
+        {/* <FaSearch /> */}
         <TextInput
           style={style.inputSearch}
           placeholder="O que você quer ouvir?"
@@ -153,8 +153,6 @@ function Busca() {
             }}
           />
         </View>
-
-        {/* background-color: rgb(45, 70, 185); */}
       </View>
     </ScrollView>
   );
@@ -164,12 +162,12 @@ const style = StyleSheet.create({
   titleSection: {
     color: "white",
     marginTop: 20,
-    fontWeight: 600,
+    fontWeight: '600',
   },
   txtSecao: {
     marginTop: 10,
     marginLeft: 10,
-    fontWeight: 600,
+    fontWeight: '600',
     fontSize: 17,
     color: "white",
   },
@@ -209,7 +207,7 @@ const style = StyleSheet.create({
   },
   txtGeneros: {
     color: "white",
-    fontWeight: 600,
+    fontWeight: '600',
   },
   boxGeneros: {
     display: "flex",
@@ -252,7 +250,7 @@ const style = StyleSheet.create({
     padding: 5,
     fontSize: 15,
     borderWidth: 0,
-    fontWeight: 600,
+    fontWeight: '600',
     width: "100%",
     borderColor: "white",
     borderRightWidth: 0,
@@ -275,7 +273,7 @@ const style = StyleSheet.create({
   },
   titleBuscar: {
     color: "white",
-    fontWeight: 600,
+    fontWeight: '600',
     fontSize: 20,
   },
   box: {

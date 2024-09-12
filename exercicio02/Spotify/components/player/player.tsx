@@ -1,6 +1,7 @@
-import { FaGoogle, FaPlay, FaPlus, FaPlusCircle, FaShare } from "react-icons/fa";
+// import { FaGoogle, FaPlay, FaPlus, FaPlusCircle, FaShare } from "react-icons/fa";
 import {} from "react-icons/bi"
 import { Image, StyleSheet, Text, View } from "react-native";
+import { Icon } from "react-native-elements";
 
 function Player() {
 
@@ -19,9 +20,9 @@ function Player() {
         </View>
       </View>
       <View style={style.divShare}>
-        <FaShare style={style.btnShare}/>
-        <FaPlusCircle style={style.btnShare}/>
-        <FaPlay style={style.btnShare}/>
+        <Icon name="share" type="font-awesome" color="#fff" size={20} />
+        <Icon name="plus" type="font-awesome" color="#fff" size={20} />
+        <Icon name="play" type="font-awesome" color="#fff" size={20} />
       </View>
     </View>
   );
@@ -63,7 +64,7 @@ const style = StyleSheet.create({
   },
   btnShare: {
     cursor: "pointer",
-
+    height:5, 
     color: "white"
   }
 });

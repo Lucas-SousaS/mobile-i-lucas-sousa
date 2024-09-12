@@ -1,7 +1,7 @@
-import Album from "@/components/album/album";
+import Album from "@/components/album/Album";
 import Albuns from "@/components/Albuns/Albuns";
-import CardHeader from "@/components/cardHeader/cardHeader";
-import Playlist from "@/components/playlists/playlist";
+import CardHeader from "@/components/cardHeader/CardHeader";
+import Playlist from "@/components/playlists/Playlist";
 import { StyleSheet, Text, View, ScrollView } from "react-native";
 
 function Home() {
@@ -60,6 +60,7 @@ function Home() {
       <Albuns title="Suas playlists estão com saudade" tema="rock" />
       <Albuns title="Suas playlists estão com saudade" tema="blues" />
       <Albuns title="Suas playlists estão com saudade" tema="pagode" />
+      <View style={{marginBottom:100}}></View>
     </ScrollView>
   );
 }
@@ -99,7 +100,7 @@ const style = StyleSheet.create({
     borderRadius: 20,
   },
   txtCardGreen: {
-    fontWeight: 300,
+    fontWeight: '300',
   },
   card: {
     display: "flex",
@@ -109,7 +110,7 @@ const style = StyleSheet.create({
     borderRadius: 20,
   },
   txtCard: {
-    fontWeight: 300,
+    fontWeight: '300',
     color: "white",
   },
   containerPlaylist: {
@@ -134,7 +135,7 @@ const style = StyleSheet.create({
   titleAlbuns: {
     color: "white",
     marginTop: 30,
-    fontWeight: 700,
+    fontWeight: '700',
     fontSize: 20,
   },
 });

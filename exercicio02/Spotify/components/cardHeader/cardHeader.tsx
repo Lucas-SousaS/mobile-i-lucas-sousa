@@ -7,14 +7,14 @@ type cardHeaderProps = {
 
 function CardHeader({texto, tema }: cardHeaderProps) {
 
-    const isGreenCard = tema === "green" ? true : false;
+    const IsGreenCard = tema === "green" ? true : false;
 
-    const cardStyle = isGreenCard ? style.greenCard : style.card;
-    const textStyle = isGreenCard ? style.greenText : style.txtCard;
+    const CardStyle = IsGreenCard ? style.greenCard : style.card;
+    const TextStyle = IsGreenCard ? style.greenText : style.txtCard;
   
   return (
-    <View style={cardStyle}>
-      <Text style={textStyle}>{texto}</Text>
+    <View style={CardStyle}>
+      <Text style={TextStyle}>{texto}</Text>
     </View>
   );
 }
@@ -31,7 +31,7 @@ const style = StyleSheet.create({
         
     },
     txtCard: {
-        fontWeight: 400,
+        fontWeight: '400',
         cursor: "pointer",
         color:"white"
     },
@@ -45,7 +45,7 @@ const style = StyleSheet.create({
         
     },
     greenText: {
-        fontWeight: 400,
+        fontWeight: '400',
         color:"black"
     }
 })

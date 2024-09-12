@@ -40,7 +40,7 @@ const style = StyleSheet.create({
     },
     txt:{
         color:"#fff",
-        fontWeight: 600
+        fontWeight: '600'
     }
 })
 

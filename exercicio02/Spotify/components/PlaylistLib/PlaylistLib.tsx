@@ -37,12 +37,12 @@ const style = StyleSheet.create({
     txtCinzaPlaylist:{
         color: "gray",
         fontSize: 10,
-        fontWeight: 400,
+        fontWeight: '400',
     },
   txtPlaylist: {
     color: "white",
     fontSize: 17,
-    fontWeight: 600,
+    fontWeight: '600',
   },
   imgPlaylist: {
     height: 60,
