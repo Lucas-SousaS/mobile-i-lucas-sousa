@@ -1,7 +1,7 @@
-import Album from "@/components/album/Album";
+import Album from "@/components/album/album";
 import Albuns from "@/components/Albuns/Albuns";
-import CardHeader from "@/components/cardHeader/CardHeader";
-import Playlist from "@/components/playlists/Playlist";
+import CardHeader from "@/components/cardHeader/cardHeader";
+import Playlist from "@/components/playlists/playlist";
 import { StyleSheet, Text, View, ScrollView } from "react-native";
 
 function Home() {
@@ -9,6 +9,7 @@ function Home() {
     <ScrollView
       style={style.container}
       showsVerticalScrollIndicator={false}
+      scrollEnabled={true}
       showsHorizontalScrollIndicator={false}
     >
       {/* header */}

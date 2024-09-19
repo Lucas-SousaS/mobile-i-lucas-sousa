@@ -1,6 +1,6 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import { Link } from "expo-router";
-import Player from "../player/Player";
+import Player from "../player/player";
 import { Icon } from "react-native-elements";
 
 function NavBar() {
@@ -14,14 +14,14 @@ function NavBar() {
         </Pressable>
       </Link>
 
-      <Link href="/busca/Index" asChild>
+      <Link href="/busca" asChild>
         <Pressable style={style.containerLinks}>
         <Icon name="search" type="font-awesome" color="#fff" size={20} />
           <Text style={{ color: "white" }}>Busca</Text>
         </Pressable>
       </Link>
 
-      <Link href="/lib/Index" asChild>
+      <Link href="/lib" asChild>
         <Pressable style={style.containerLinks}>
         <Icon name="book" type="font-awesome" color="#fff" size={20} />
           <Text style={{ color: "white" }}>Biblioteca</Text>

@@ -1,4 +1,4 @@
-import CardHeader from "@/components/cardHeader/CardHeader";
+import CardHeader from "@/components/cardHeader/cardHeader";
 import PlaylistLib from "@/components/PlaylistLib/PlaylistLib";
 // import {
 //   FaArrowsAltH,
@@ -16,6 +16,7 @@ function Library() {
   return (
     <ScrollView
       style={style.container}
+      scrollEnabled={true}
       showsVerticalScrollIndicator={false}
       showsHorizontalScrollIndicator={false}
     >

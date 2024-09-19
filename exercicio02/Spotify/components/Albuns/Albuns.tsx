@@ -1,5 +1,5 @@
 import { ScrollView, StyleSheet, Text, View } from "react-native";
-import Album from "../album/Album";
+import Album from "../album/album";
 
 type playlistAlbunsPorps = {
     title: string,

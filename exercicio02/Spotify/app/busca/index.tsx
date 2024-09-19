@@ -12,6 +12,7 @@ function Busca() {
   return (
     <ScrollView
       style={style.container}
+      scrollEnabled={true}
       showsVerticalScrollIndicator={false}
       showsHorizontalScrollIndicator={false}
     >
@@ -170,6 +171,7 @@ const style = StyleSheet.create({
     fontWeight: '600',
     fontSize: 17,
     color: "white",
+    width: 90,
   },
   imgSecao: {
     height: 60,

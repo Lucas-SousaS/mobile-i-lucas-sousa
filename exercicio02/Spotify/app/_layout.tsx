@@ -1,7 +1,6 @@
 import { Stack } from "expo-router";
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import NavBar from "../components/navBar/Navbar";
-import Library from "./lib/Index";
+import NavBar from "../components/navBar/navbar";
 import { View } from "react-native";
 
 export default function RootLayout() {
